@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-pa
+part 'constants.g.dart';
 class Constants {
   final mainTitle = "Amy's reader stats";
   final subTitle = "War and Peace";
@@ -23,6 +23,6 @@ class Constants {
 
 
 @riverpod
-Constants textConstants(Constants ref) {
+Constants textConstants(TextConstantsRef ref) {
   return Constants();
 }

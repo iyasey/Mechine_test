@@ -1,5 +1,6 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
- part 'images_constants.g.dart';
+part 'images_constants.g.dart';
+
 class ImagesConstants {
   final titleImage = "assets/images/images.jpeg";
   final firstImage = "assets/images/images (1).jpeg";
@@ -8,6 +9,7 @@ class ImagesConstants {
   final fourthImage = "assets/images/images (4).jpeg";
   final fifthImage = "assets/images/images (5).jpeg";
   final sixthImage = "assets/images/images (6).jpeg";
+  final bookImage = "assets/images/81oHM-dzefL._SY466_.jpg";
 }
 
 @riverpod

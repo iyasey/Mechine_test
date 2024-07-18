@@ -16,6 +16,7 @@ class AppColorPalet {
   final skyblue2 = const Color(0xFF6ccaee);
   final grey200 = const Color(0xFF788097);
   final grey2 = const Color(0xFF323443);
+  final black = Colors.black;
 }
 
 @riverpod
