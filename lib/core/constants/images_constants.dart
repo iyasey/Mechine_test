@@ -12,6 +12,23 @@ class ImagesConstants {
   final bookImage = "assets/images/81oHM-dzefL._SY466_.jpg";
   final bookIcon =
       "assets/images/Screenshot_2024-07-19_011606-removebg-preview.png";
+  final clock =
+      "assets/images/Screenshot_2024-07-19_013939-removebg-preview.png";
+  final hotRelod =
+      "assets/images/Screenshot_2024-07-19_014117-removebg-preview.png";
+  final king =
+      "assets/images/Screenshot_2024-07-19_014207-removebg-preview.png";
+  final bulb =
+      "assets/images/Screenshot_2024-07-19_014250-removebg-preview.png";
+  final tick =
+      "assets/images/Screenshot_2024-07-19_014332-removebg-preview (1).png";
+  final round =
+      "assets/images/Screenshot_2024-07-19_014413-removebg-preview.png";
+  final eight =
+      "assets/images/Screenshot_2024-07-19_014527-removebg-preview.png";
+  final like =
+      "assets/images/Screenshot_2024-07-19_014732-removebg-preview.png";
+      
 }
 
 @riverpod

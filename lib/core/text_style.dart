@@ -19,7 +19,7 @@ class AppTextStyles {
   }
 
   static TextStyle get normalText {
-    return const TextStyle(fontWeight: FontWeight.normal, color: Colors.black);
+    return const TextStyle(fontWeight: FontWeight.w500, color: Colors.black);
   }
 
   static TextStyle get smallBoldText {

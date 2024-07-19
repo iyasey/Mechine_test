@@ -7,6 +7,7 @@ class AppColorPalet {
   final yellow300 = const Color(0xFFfede67);
   final yellow2 = const Color(0xFFf4c43e);
   final orangelite = const Color(0xFFff9a62);
+  final darkOrange = const Color(0xFFe9844c);
   final orange2 = const Color(0xFFf4c43e);
   final greenlite = const Color(0xFFb6f36a);
   final green2 = const Color(0xFF96e13e);
