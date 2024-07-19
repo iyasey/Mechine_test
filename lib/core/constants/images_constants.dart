@@ -10,6 +10,8 @@ class ImagesConstants {
   final fifthImage = "assets/images/images (5).jpeg";
   final sixthImage = "assets/images/images (6).jpeg";
   final bookImage = "assets/images/81oHM-dzefL._SY466_.jpg";
+  final bookIcon =
+      "assets/images/Screenshot_2024-07-19_011606-removebg-preview.png";
 }
 
 @riverpod

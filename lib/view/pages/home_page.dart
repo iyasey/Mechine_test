@@ -4,7 +4,9 @@ import 'package:finsire_mechine_test/core/constants/constants.dart';
 import 'package:finsire_mechine_test/core/constants/images_constants.dart';
 import 'package:finsire_mechine_test/core/dyinamic_size.dart';
 import 'package:finsire_mechine_test/core/text_style.dart';
+import 'package:finsire_mechine_test/view/widgets/api_number_widget.dart';
 import 'package:finsire_mechine_test/view/widgets/first_row.dart';
+import 'package:finsire_mechine_test/view/widgets/main_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -18,6 +20,7 @@ class HomePage extends ConsumerWidget {
     final text = ref.watch(textConstantsProvider);
     final color = ref.watch(appColorPaletProvider);
     final number = ref.watch(numberProvider);
+
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -34,66 +37,17 @@ class HomePage extends ConsumerWidget {
           ],
         ),
       ),
-      body: number.when(
-        data: (data) => Padding(
-          padding: EdgeInsets.all(context.width(10)),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              FirstRow(image: image, text: text, color: color),
-              Container(
-                width: double.infinity,
-                height: context.height(210),
-                decoration: BoxDecoration(
-                    color: color.yellow300,
-                    borderRadius: BorderRadius.circular(context.width(28))),
-                child: Padding(
-                  padding: EdgeInsets.all(context.width(13)),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            text.cardTitle,
-                            style: AppTextStyles.cardTitle,
-                          ),
-                          Container(
-                            width: context.width(50),
-                            height: context.height(50),
-                            child: Icon(Icons.upload),
-                            decoration: BoxDecoration(
-                                color: color.yellow2,
-                                borderRadius:
-                                    BorderRadius.circular(context.width(18))),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          const FaIcon(FontAwesomeIcons.book),
-                          Text(
-                            data![0].toString(),
-                            style: TextStyle(color: color.black),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-        ),
-        loading: () => Center(
-          child: CircularProgressIndicator(),
-        ),
-        error: (error, stackTrace) => Center(
-          child: Text(
-            error.toString(),
-          ),
+      body: Padding(
+        padding: EdgeInsets.all(context.width(10)),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            FirstRow(image: image, text: text, color: color),
+            MainContainer(color: color, text: text, image: image),
+          ],
         ),
       ),
     );
   }
 }
+

@@ -13,24 +13,17 @@ class AppTextStyles {
         fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black);
   }
 
-  static TextStyle get bodyText {
+  static TextStyle get apiNumber {
     return const TextStyle(
-      fontSize: 14,
-      fontWeight: FontWeight.normal,
-    );
+        fontSize: 45, fontWeight: FontWeight.bold, color: Colors.black);
   }
 
-  static TextStyle get highlightedText {
-    return const TextStyle(
-      fontSize: 20,
-      fontWeight: FontWeight.bold,
-    );
+  static TextStyle get normalText {
+    return const TextStyle(fontWeight: FontWeight.normal, color: Colors.black);
   }
 
-  static TextStyle get smallText {
+  static TextStyle get smallBoldText {
     return const TextStyle(
-      fontSize: 12,
-      fontWeight: FontWeight.normal,
-    );
+        fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black);
   }
 }
